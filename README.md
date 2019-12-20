@@ -2,9 +2,7 @@
 WatchOS Calculator with Basic Unit Converter and real time currency converter.
 
 ## Screenshots
-<img src="https://user-images.githubusercontent.com/40908684/71241640-1ff97300-2332-11ea-83df-67e553512c96.png">
-<img src="https://user-images.githubusercontent.com/40908684/71241724-520ad500-2332-11ea-9f61-2d3e77eb6d4b.png">
-<img src="https://user-images.githubusercontent.com/40908684/71241776-71096700-2332-11ea-9854-59cacd347740.png">
+<img src="https://user-images.githubusercontent.com/40908684/71243659-d0697600-2336-11ea-906d-a710082bce19.png">
 
 ## Features
 - This Application allows user to perform Basic Calculations (arithmetic operations).
