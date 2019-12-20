@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ncb-r3-Y2s">
+    <device id="watch42"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Basic Controller-->
+        <scene sceneID="34o-V3-SN4">
+            <objects>
+                <controller id="ncb-r3-Y2s" customClass="basicController" customModule="Calvert_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="32" alignment="left" id="Nfx-pT-h9R">
+                            <items>
+                                <label width="136" alignment="right" text="0" textAlignment="right" id="Ebi-PB-uqz">
+                                    <fontDescription key="font" type="system" pointSize="30"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="EAs-L1-ILJ">
+                            <items>
+                                <group width="1" height="24" alignment="left" id="Vfi-bh-9um">
+                                    <items>
+                                        <button width="0.25" height="24" alignment="left" title="AC" id="g72-AG-uOz">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" red="0.83155000209999996" green="0.83090764279999996" blue="0.8236878514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="ac" destination="ncb-r3-Y2s" id="EHT-hv-vi6"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="24" alignment="left" title="+/-" id="vzk-HM-JDT">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" red="0.83155000209999996" green="0.83090764279999996" blue="0.8236878514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                        </button>
+                                        <button width="0.25" height="24" alignment="left" title="CON." id="I5A-Se-bp8">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" red="0.83155000209999996" green="0.83090764279999996" blue="0.8236878514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="7"/>
+                                            <connections>
+                                                <action selector="conv" destination="ncb-r3-Y2s" id="0vp-J7-ObE"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="24" alignment="left" title="/" id="2se-pq-OM5">
+                                            <color key="titleColor" red="0.94417470690000005" green="0.58055394890000001" blue="0.2003090978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="div" destination="ncb-r3-Y2s" id="0LP-0U-caa"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="21" alignment="left" title="CON." id="xQB-wC-ZZI">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="backgroundColor" red="0.83155000209999996" green="0.83090764279999996" blue="0.8236878514" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="7"/>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="24" alignment="left" id="agf-du-bpg">
+                                    <items>
+                                        <button width="0.25" height="24" alignment="left" title="7" id="Xh8-Tj-FH6">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="seven" destination="ncb-r3-Y2s" id="Cqc-Cm-yhN"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="24" alignment="left" title="8" id="YHk-WJ-sQx">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="eight" destination="ncb-r3-Y2s" id="40W-wm-ZR2"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="24" alignment="left" title="9" id="jNd-uJ-ZsJ">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="nine" destination="ncb-r3-Y2s" id="JDu-vI-lcB"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="24" alignment="left" title="X" id="JYe-fy-of5">
+                                            <color key="backgroundColor" red="0.94417470690000005" green="0.58055394890000001" blue="0.2003090978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="mul" destination="ncb-r3-Y2s" id="Qqm-ok-prg"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="24" alignment="left" id="OJz-3h-WEw">
+                                    <items>
+                                        <button width="0.25" height="24" alignment="left" title="4" id="Qf2-Rk-P8n">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="four" destination="ncb-r3-Y2s" id="pbx-tE-Tbl"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="24" alignment="left" title="5" id="mWd-wZ-dFo">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="five" destination="ncb-r3-Y2s" id="mAH-GD-LFN"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="24" alignment="left" title="6" id="nbd-Ce-vSc">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="six" destination="ncb-r3-Y2s" id="9Oa-IL-BEn"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="24" alignment="left" title="-" id="WrP-aO-J0S">
+                                            <color key="backgroundColor" red="0.94417470690000005" green="0.58055394890000001" blue="0.2003090978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="sub" destination="ncb-r3-Y2s" id="8Ed-tT-jBV"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="24" alignment="left" id="FZ1-09-Iz3">
+                                    <items>
+                                        <button width="0.25" height="24" alignment="left" title="1" id="dma-DE-EX5">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="one" destination="ncb-r3-Y2s" id="1Gc-c3-g3t"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="24" alignment="left" title="2" id="bns-Zy-xUv">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="two" destination="ncb-r3-Y2s" id="gvX-eX-5gW"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="24" alignment="left" title="3" id="Ikn-0o-iQv">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="three" destination="ncb-r3-Y2s" id="H6Q-ZF-QHg"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="24" alignment="left" title="+" id="kEu-X1-H6R">
+                                            <color key="backgroundColor" red="0.94417470690000005" green="0.58055394890000001" blue="0.2003090978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="add" destination="ncb-r3-Y2s" id="X39-AJ-Pc7"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" height="24" alignment="left" id="Qk0-eJ-JI6">
+                                    <items>
+                                        <button width="0.5" height="24" alignment="left" title="0" id="HSz-ki-NDY">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="zero" destination="ncb-r3-Y2s" id="UKo-qX-j1L"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" height="24" alignment="left" title="." id="Sql-dm-N15">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                        </button>
+                                        <button width="0.25" height="24" alignment="left" title="=" id="z5d-XN-W8z">
+                                            <fontDescription key="font" type="system" pointSize="13"/>
+                                            <connections>
+                                                <action selector="result" destination="ncb-r3-Y2s" id="jap-eH-Hwv"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <separator alignment="left" id="1aU-xl-RRH"/>
+                        <separator alignment="left" id="8jz-LN-Ohj"/>
+                        <group width="1" height="33" alignment="left" id="tpg-au-Oj5">
+                            <items>
+                                <label width="136" height="26" alignment="right" verticalAlignment="center" text="Basic Quatity" textAlignment="right" id="uzC-aa-bgh"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="Hof-lN-fgN">
+                            <items>
+                                <group width="1" alignment="left" id="RHz-Tj-xmo">
+                                    <items>
+                                        <button width="0.25" alignment="left" title="Yard(m)" id="oeZ-dO-GDy">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                            <connections>
+                                                <action selector="yards" destination="ncb-r3-Y2s" id="qeK-3M-gfh"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" alignment="left" title="Foot(m)" id="vvn-aj-vYa">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                            <connections>
+                                                <action selector="Foot" destination="ncb-r3-Y2s" id="n9w-5J-4TH"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" alignment="left" title="Inch(m)" id="LQz-2N-H04">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                            <connections>
+                                                <action selector="inches" destination="ncb-r3-Y2s" id="yQZ-aX-lJu"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" alignment="left" title="Mile(m)" id="pxZ-1t-98U">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                            <connections>
+                                                <action selector="miles" destination="ncb-r3-Y2s" id="xTB-iK-pv0"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="7Qa-a1-wtf">
+                                    <items>
+                                        <button width="0.25" alignment="left" title="sq. yrd" id="HU8-6W-bAB">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                            <connections>
+                                                <action selector="sqyrd" destination="ncb-r3-Y2s" id="wqE-fM-Os6"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" alignment="left" title="sq. ft      " id="vxL-3f-H2D">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                            <connections>
+                                                <action selector="sqft" destination="ncb-r3-Y2s" id="cg2-Hg-j3D"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" alignment="left" title="hectares" id="NLZ-Te-utO">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                            <connections>
+                                                <action selector="hectare" destination="ncb-r3-Y2s" id="VNz-sf-gBt"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" alignment="left" title="acres    " id="lF7-wk-0XF">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                            <connections>
+                                                <action selector="acres" destination="ncb-r3-Y2s" id="4Xe-yb-hKE"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="5qo-VB-4GZ">
+                                    <items>
+                                        <button width="0.25" alignment="left" title="F(C)      " id="GGF-vF-UKr">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                            <connections>
+                                                <action selector="fahrenite" destination="ncb-r3-Y2s" id="3rK-hE-5tc"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" alignment="left" title="K(C)    " id="tDJ-dt-ZKn">
+                                            <fontDescription key="font" type="system" pointSize="11"/>
+                                            <connections>
+                                                <action selector="Kelvin" destination="ncb-r3-Y2s" id="auR-KN-d4a"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" alignment="left" title="Rad(Deg)" id="IBc-Ff-jcy">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                            <connections>
+                                                <action selector="Radians" destination="ncb-r3-Y2s" id="8BV-LH-ptS"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" alignment="left" title="Deg(Rad)" id="NeI-BB-6Kh">
+                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                            <connections>
+                                                <action selector="degree" destination="ncb-r3-Y2s" id="6y0-tD-s4Y"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="rrb-LM-kSC">
+                                    <items>
+                                        <button width="0.25" alignment="left" title="$   (Rs)" id="VwV-4u-rc4">
+                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                            <connections>
+                                                <action selector="USD" destination="ncb-r3-Y2s" id="TZZ-Dg-ERB"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" alignment="left" title="€   (Rs)" id="lO9-h8-d6R">
+                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                            <connections>
+                                                <action selector="EURO" destination="ncb-r3-Y2s" id="RVK-NT-4m8"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" alignment="left" title=" £(Rs)" id="o82-DT-ccF">
+                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                            <connections>
+                                                <action selector="POUNDS" destination="ncb-r3-Y2s" id="lsm-5A-Cms"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" alignment="left" title="AUD(Rs)" id="urT-w8-2f4">
+                                            <fontDescription key="font" type="system" pointSize="12"/>
+                                            <connections>
+                                                <action selector="AUD" destination="ncb-r3-Y2s" id="aw2-1c-Nlt"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="ac" destination="g72-AG-uOz" id="1Y7-Oh-cEU"/>
+                        <outlet property="clabel" destination="Ebi-PB-uqz" id="jbf-4v-RJ9"/>
+                        <outlet property="converterlabel" destination="uzC-aa-bgh" id="Om6-P5-Oor"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="331" y="379.5"/>
+        </scene>
+    </scenes>
+</document>

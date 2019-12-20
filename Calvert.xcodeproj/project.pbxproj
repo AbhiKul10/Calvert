@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1E6F837239CE0FE001AE03F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6F836239CE0FE001AE03F /* AppDelegate.swift */; };
+		E1E6F839239CE0FE001AE03F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6F838239CE0FE001AE03F /* SceneDelegate.swift */; };
+		E1E6F83B239CE0FE001AE03F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6F83A239CE0FE001AE03F /* ContentView.swift */; };
+		E1E6F83D239CE100001AE03F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E6F83C239CE100001AE03F /* Assets.xcassets */; };
+		E1E6F840239CE100001AE03F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E6F83F239CE100001AE03F /* Preview Assets.xcassets */; };
+		E1E6F843239CE100001AE03F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E6F841239CE100001AE03F /* LaunchScreen.storyboard */; };
+		E1E6F848239CE100001AE03F /* Calvert WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E1E6F847239CE100001AE03F /* Calvert WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1E6F84E239CE100001AE03F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E6F84C239CE100001AE03F /* Interface.storyboard */; };
+		E1E6F850239CE101001AE03F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E6F84F239CE101001AE03F /* Assets.xcassets */; };
+		E1E6F857239CE101001AE03F /* Calvert WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E1E6F856239CE101001AE03F /* Calvert WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1E6F85C239CE101001AE03F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6F85B239CE101001AE03F /* ContentView.swift */; };
+		E1E6F85E239CE101001AE03F /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6F85D239CE101001AE03F /* HostingController.swift */; };
+		E1E6F860239CE101001AE03F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6F85F239CE101001AE03F /* ExtensionDelegate.swift */; };
+		E1E6F862239CE102001AE03F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E6F861239CE102001AE03F /* Assets.xcassets */; };
+		E1E6F865239CE102001AE03F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E6F864239CE102001AE03F /* Preview Assets.xcassets */; };
+		E1E6F87723A3ACD8001AE03F /* basicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E6F87623A3ACD8001AE03F /* basicController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1E6F849239CE100001AE03F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1E6F82B239CE0FE001AE03F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1E6F846239CE100001AE03F;
+			remoteInfo = "Calc WatchKit App";
+		};
+		E1E6F858239CE101001AE03F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1E6F82B239CE0FE001AE03F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1E6F855239CE101001AE03F;
+			remoteInfo = "Calc WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1E6F86C239CE102001AE03F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E1E6F857239CE101001AE03F /* Calvert WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E6F870239CE102001AE03F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E1E6F848239CE100001AE03F /* Calvert WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E1E6F833239CE0FE001AE03F /* Calvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E6F836239CE0FE001AE03F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1E6F838239CE0FE001AE03F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E1E6F83A239CE0FE001AE03F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1E6F83C239CE100001AE03F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1E6F83F239CE100001AE03F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E1E6F842239CE100001AE03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1E6F844239CE100001AE03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E6F847239CE100001AE03F /* Calvert WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calvert WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E6F84D239CE100001AE03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E1E6F84F239CE101001AE03F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1E6F851239CE101001AE03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E6F856239CE101001AE03F /* Calvert WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Calvert WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E6F85B239CE101001AE03F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1E6F85D239CE101001AE03F /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		E1E6F85F239CE101001AE03F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E1E6F861239CE102001AE03F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1E6F864239CE102001AE03F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E1E6F866239CE102001AE03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1E6F87623A3ACD8001AE03F /* basicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = basicController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1E6F830239CE0FE001AE03F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E6F853239CE101001AE03F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E1E6F82A239CE0FE001AE03F = {
+			isa = PBXGroup;
+			children = (
+				E1E6F835239CE0FE001AE03F /* Calvert */,
+				E1E6F84B239CE100001AE03F /* Calvert WatchKit App */,
+				E1E6F85A239CE101001AE03F /* Calvert WatchKit Extension */,
+				E1E6F834239CE0FE001AE03F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1E6F834239CE0FE001AE03F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1E6F833239CE0FE001AE03F /* Calvert.app */,
+				E1E6F847239CE100001AE03F /* Calvert WatchKit App.app */,
+				E1E6F856239CE101001AE03F /* Calvert WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1E6F835239CE0FE001AE03F /* Calvert */ = {
+			isa = PBXGroup;
+			children = (
+				E1E6F836239CE0FE001AE03F /* AppDelegate.swift */,
+				E1E6F838239CE0FE001AE03F /* SceneDelegate.swift */,
+				E1E6F83A239CE0FE001AE03F /* ContentView.swift */,
+				E1E6F83C239CE100001AE03F /* Assets.xcassets */,
+				E1E6F841239CE100001AE03F /* LaunchScreen.storyboard */,
+				E1E6F844239CE100001AE03F /* Info.plist */,
+				E1E6F83E239CE100001AE03F /* Preview Content */,
+			);
+			path = Calvert;
+			sourceTree = "<group>";
+		};
+		E1E6F83E239CE100001AE03F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E1E6F83F239CE100001AE03F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E1E6F84B239CE100001AE03F /* Calvert WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E1E6F84C239CE100001AE03F /* Interface.storyboard */,
+				E1E6F84F239CE101001AE03F /* Assets.xcassets */,
+				E1E6F851239CE101001AE03F /* Info.plist */,
+			);
+			path = "Calvert WatchKit App";
+			sourceTree = "<group>";
+		};
+		E1E6F85A239CE101001AE03F /* Calvert WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E1E6F85B239CE101001AE03F /* ContentView.swift */,
+				E1E6F85D239CE101001AE03F /* HostingController.swift */,
+				E1E6F85F239CE101001AE03F /* ExtensionDelegate.swift */,
+				E1E6F87623A3ACD8001AE03F /* basicController.swift */,
+				E1E6F861239CE102001AE03F /* Assets.xcassets */,
+				E1E6F866239CE102001AE03F /* Info.plist */,
+				E1E6F863239CE102001AE03F /* Preview Content */,
+			);
+			path = "Calvert WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E1E6F863239CE102001AE03F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E1E6F864239CE102001AE03F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1E6F832239CE0FE001AE03F /* Calvert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E6F871239CE102001AE03F /* Build configuration list for PBXNativeTarget "Calvert" */;
+			buildPhases = (
+				E1E6F82F239CE0FE001AE03F /* Sources */,
+				E1E6F830239CE0FE001AE03F /* Frameworks */,
+				E1E6F831239CE0FE001AE03F /* Resources */,
+				E1E6F870239CE102001AE03F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1E6F84A239CE100001AE03F /* PBXTargetDependency */,
+			);
+			name = Calvert;
+			productName = Calc;
+			productReference = E1E6F833239CE0FE001AE03F /* Calvert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1E6F846239CE100001AE03F /* Calvert WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E6F86D239CE102001AE03F /* Build configuration list for PBXNativeTarget "Calvert WatchKit App" */;
+			buildPhases = (
+				E1E6F845239CE100001AE03F /* Resources */,
+				E1E6F86C239CE102001AE03F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1E6F859239CE101001AE03F /* PBXTargetDependency */,
+			);
+			name = "Calvert WatchKit App";
+			productName = "Calc WatchKit App";
+			productReference = E1E6F847239CE100001AE03F /* Calvert WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E1E6F855239CE101001AE03F /* Calvert WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E6F869239CE102001AE03F /* Build configuration list for PBXNativeTarget "Calvert WatchKit Extension" */;
+			buildPhases = (
+				E1E6F852239CE101001AE03F /* Sources */,
+				E1E6F853239CE101001AE03F /* Frameworks */,
+				E1E6F854239CE101001AE03F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Calvert WatchKit Extension";
+			productName = "Calc WatchKit Extension";
+			productReference = E1E6F856239CE101001AE03F /* Calvert WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1E6F82B239CE0FE001AE03F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Abhi Kulshrestha";
+				TargetAttributes = {
+					E1E6F832239CE0FE001AE03F = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					E1E6F846239CE100001AE03F = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					E1E6F855239CE101001AE03F = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = E1E6F82E239CE0FE001AE03F /* Build configuration list for PBXProject "Calvert" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1E6F82A239CE0FE001AE03F;
+			productRefGroup = E1E6F834239CE0FE001AE03F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1E6F832239CE0FE001AE03F /* Calvert */,
+				E1E6F846239CE100001AE03F /* Calvert WatchKit App */,
+				E1E6F855239CE101001AE03F /* Calvert WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1E6F831239CE0FE001AE03F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E6F843239CE100001AE03F /* LaunchScreen.storyboard in Resources */,
+				E1E6F840239CE100001AE03F /* Preview Assets.xcassets in Resources */,
+				E1E6F83D239CE100001AE03F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E6F845239CE100001AE03F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E6F850239CE101001AE03F /* Assets.xcassets in Resources */,
+				E1E6F84E239CE100001AE03F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E6F854239CE101001AE03F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E6F865239CE102001AE03F /* Preview Assets.xcassets in Resources */,
+				E1E6F862239CE102001AE03F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1E6F82F239CE0FE001AE03F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E6F837239CE0FE001AE03F /* AppDelegate.swift in Sources */,
+				E1E6F839239CE0FE001AE03F /* SceneDelegate.swift in Sources */,
+				E1E6F83B239CE0FE001AE03F /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E6F852239CE101001AE03F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E6F85E239CE101001AE03F /* HostingController.swift in Sources */,
+				E1E6F87723A3ACD8001AE03F /* basicController.swift in Sources */,
+				E1E6F85C239CE101001AE03F /* ContentView.swift in Sources */,
+				E1E6F860239CE101001AE03F /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1E6F84A239CE100001AE03F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1E6F846239CE100001AE03F /* Calvert WatchKit App */;
+			targetProxy = E1E6F849239CE100001AE03F /* PBXContainerItemProxy */;
+		};
+		E1E6F859239CE101001AE03F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1E6F855239CE101001AE03F /* Calvert WatchKit Extension */;
+			targetProxy = E1E6F858239CE101001AE03F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1E6F841239CE100001AE03F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1E6F842239CE100001AE03F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E1E6F84C239CE100001AE03F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1E6F84D239CE100001AE03F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1E6F867239CE102001AE03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1E6F868239CE102001AE03F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1E6F86A239CE102001AE03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Calvert WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = D29WR6B5L2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Calvert WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AbhiKulshrestha.Calvert.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "Calvert WatchKit Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		E1E6F86B239CE102001AE03F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Calvert WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = D29WR6B5L2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Calvert WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AbhiKulshrestha.Calvert.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "Calvert WatchKit Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		E1E6F86E239CE102001AE03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D29WR6B5L2;
+				IBSC_MODULE = Calvert_WatchKit_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/Calvert WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = AbhiKulshrestha.Calvert.watchkitapp;
+				PRODUCT_NAME = "Calvert WatchKit App";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		E1E6F86F239CE102001AE03F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D29WR6B5L2;
+				IBSC_MODULE = Calvert_WatchKit_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/Calvert WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = AbhiKulshrestha.Calvert.watchkitapp;
+				PRODUCT_NAME = "Calvert WatchKit App";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		E1E6F872239CE102001AE03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Calvert/Preview Content\"";
+				DEVELOPMENT_TEAM = D29WR6B5L2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Calvert/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AbhiKulshrestha.Calvert;
+				PRODUCT_NAME = Calvert;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1E6F873239CE102001AE03F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Calvert/Preview Content\"";
+				DEVELOPMENT_TEAM = D29WR6B5L2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Calvert/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AbhiKulshrestha.Calvert;
+				PRODUCT_NAME = Calvert;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1E6F82E239CE0FE001AE03F /* Build configuration list for PBXProject "Calvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E6F867239CE102001AE03F /* Debug */,
+				E1E6F868239CE102001AE03F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E6F869239CE102001AE03F /* Build configuration list for PBXNativeTarget "Calvert WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E6F86A239CE102001AE03F /* Debug */,
+				E1E6F86B239CE102001AE03F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E6F86D239CE102001AE03F /* Build configuration list for PBXNativeTarget "Calvert WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E6F86E239CE102001AE03F /* Debug */,
+				E1E6F86F239CE102001AE03F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E6F871239CE102001AE03F /* Build configuration list for PBXNativeTarget "Calvert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E6F872239CE102001AE03F /* Debug */,
+				E1E6F873239CE102001AE03F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1E6F82B239CE0FE001AE03F /* Project object */;
+}
